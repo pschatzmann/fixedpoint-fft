@@ -1,0 +1,35 @@
+#######################################
+# Syntax Coloring Map for fixedpoint-fft
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+FixedFFT	KEYWORD1
+FixedFFTEngine	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+end	KEYWORD2
+loadReal	KEYWORD2
+load	KEYWORD2
+fft	KEYWORD2
+ifft	KEYWORD2
+real	KEYWORD2
+imag	KEYWORD2
+realData	KEYWORD2
+imagData	KEYWORD2
+size	KEYWORD2
+magnitude	KEYWORD2
+magnitudeSquared	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+kQBits	LITERAL1
+kMaxN	LITERAL1
