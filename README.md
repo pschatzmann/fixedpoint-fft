@@ -15,7 +15,7 @@ available as calc types on hardware where they make sense (see
 There's no shortage of FFT libraries for Arduino already - `arduinoFFT`,
 KissFFT, FFTReal, CMSIS-DSP and Espressif's ESP-DSP wrappers among them
 (see e.g. the driver wrappers in
-[arduino-audio-tools](https://github.com/pschatzmann/arduino-audio-tools)).
+[arduino-audio-tools](https://github.com/pschatzmann/arduino-audio-tools/wiki/FFT)).
 Nearly all of them share the same two properties, though:
 
 - **They compute in `float` (sometimes `double`) unconditionally.** That's
