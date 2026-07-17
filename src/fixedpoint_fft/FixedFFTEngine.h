@@ -45,13 +45,16 @@ namespace fixedpoint_fft {
 ///           hardware single-precision FPU (ESP32/ESP32-S3, ARM
 ///           Cortex-M4F/M7, ...): a plain float multiply-add is already
 ///           correctly scaled (no Qn rescale-by-shift step, unlike the
-///           integer types), floats have enough dynamic range that the
-///           per-stage overflow-guard scaling is unnecessary, and on
-///           that hardware it's about as fast as int32_t while being
-///           easier to reason about. On integer-only targets like plain
-///           AVR, float is emulated in software and is much slower than
-///           any of the integer calc types - stick to int8_t/int16_t/
-///           int32_t there.
+///           integer types), and floats have enough dynamic range that
+///           the per-stage overflow-guard/saturation the integer types
+///           need on every butterfly output is unnecessary too. That's
+///           not a minor saving - on that hardware it consistently
+///           makes float several times faster than int32_t, not merely
+///           comparable to it (e.g. ESP32: 75.14us vs. 398.47us for an
+///           N=64 FFT - see Performance.md), while also being easier to
+///           reason about. On integer-only targets like plain AVR, float
+///           is emulated in software and is much slower than any of the
+///           integer calc types - stick to int8_t/int16_t/int32_t there.
 ///
 ///           double is a desktop-only precision option: real MCU targets
 ///           either have no hardware double (AVR, ESP32 - it's emulated
