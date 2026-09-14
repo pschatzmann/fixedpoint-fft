@@ -78,10 +78,10 @@ cleanly - see [Choosing `float`/`double`](#choosing-floatdouble).
 ## Documentation
 
 - [Quick start](docs/Quickstart.md)
-- [Choosing `float`/`double`](docs/ChoosingFloatOrDouble.md)
-- [Precision vs. calculation type](docs/Precision.md)
-- [Implementation details](docs/Implementation.md)
 - [Performance benchmarks](docs/Performance.md)
+- [Precision vs. calculation type](docs/Precision.md)
+- [Choosing `float`/`double`](docs/ChoosingFloatOrDouble.md)
+- [Implementation details](docs/Implementation.md)
 - [Building with cmake](docs/cmake.md)
 
 
