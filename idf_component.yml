@@ -1,0 +1,12 @@
+version: "0.1.0"
+description: "Fast, header-only, in-place FFT/IFFT for int8_t/int16_t/int32_t/float/double, built around fixed-point integer math."
+url: https://github.com/pschatzmann/fixedpoint-fft
+repository: https://github.com/pschatzmann/fixedpoint-fft.git
+maintainers:
+  - Phil Schatzmann <phil.schatzmann@gmail.com>
+license: MIT
+tags:
+  - fft
+  - dsp
+  - fixed-point
+  - signal-processing

@@ -1,4 +1,12 @@
 cmake_minimum_required(VERSION 3.14)
+
+if(ESP_PLATFORM)
+    # Building as an ESP-IDF component (via idf_component.yml or a plain
+    # EXTRA_COMPONENT_DIRS reference): header-only, no sources to compile.
+    idf_component_register(INCLUDE_DIRS src)
+    return()
+endif()
+
 project(fixedpoint-fft CXX)
 
 # Header-only library: just exposes src/ as an include path so other

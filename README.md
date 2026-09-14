@@ -1,6 +1,7 @@
 # fixedpoint-fft
 
 [![Arduino Library](https://img.shields.io/badge/Arduino-Library-blue.svg)](https://www.arduino.cc/reference/en/libraries/)
+[![ESP-IDF](https://img.shields.io/badge/ESP--IDF-Component-blue.svg)](idf_component.yml)
 [![CMake](https://img.shields.io/badge/CMake-Supported-blue.svg)](CMakeLists.txt)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -81,6 +82,7 @@ cleanly - see [Choosing `float`/`double`](#choosing-floatdouble).
 - [Precision vs. calculation type](docs/Precision.md)
 - [Implementation details](docs/Implementation.md)
 - [Performance benchmarks](docs/Performance.md)
+- [Building with cmake](docs/cmake.md)
 
 
 ## Installation
@@ -94,4 +96,16 @@ git clone https://github.com/pschatzmann/fixedpoint-fft.git
 
 For running the host-side test suite or consuming this library from
 another CMake project, see [CMAKE.md](CMAKE.md).
+
+For ESP-IDF, this repo is also a standard IDF component (`idf_component.yml`).
+Either clone it into your project's `components/` directory, or add it as a
+git dependency in your project's `idf_component.yml`:
+
+```yaml
+dependencies:
+  fixedpoint-fft:
+    git: https://github.com/pschatzmann/fixedpoint-fft.git
+```
+
+then `#include "FixedFFT.h"` as usual.
 
