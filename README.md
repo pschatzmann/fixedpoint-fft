@@ -95,7 +95,7 @@ git clone https://github.com/pschatzmann/fixedpoint-fft.git
 ```
 
 For running the host-side test suite or consuming this library from
-another CMake project, see [CMAKE.md](CMAKE.md).
+another CMake project, see [cmake.md](docs/cmake.md).
 
 For ESP-IDF, this repo is also a standard IDF component (`idf_component.yml`).
 Either clone it into your project's `components/` directory, or add it as a
